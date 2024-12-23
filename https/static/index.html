@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User Management</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>User Management</h1>
+
+        <div class="form-container">
+            <h2>Create User</h2>
+            <form id="userForm">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <button type="submit">Create User</button>
+            </form>
+        </div>
+
+        <div class="users-container">
+            <h2>Users List</h2>
+            <div id="usersList"></div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
