@@ -40,7 +40,7 @@ func main() {
 	router.PathPrefix("/static/").Handler(http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
 	router.HandleFunc("/", homeHandler).Methods("GET")
 
-	fmt.Println("Server is running on http://localhost:8080")
+	fmt.Println("Server is running")
 	log.Fatal(http.ListenAndServe(":443", router))
 }
 
